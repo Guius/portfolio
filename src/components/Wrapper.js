@@ -11,8 +11,8 @@ const Wrapper = styled.section`
   grid-template-rows: 2fr 2fr 2fr 1fr;
   grid-template-columns: repeat(2, 1fr);
   @media (min-width: 1250px) {
-    width: 50vw;
-    height: 90vh;
+    width: 60vw;
+    height: 80vh;
   }
 
   @media (max-width: 700px) {

@@ -23,7 +23,7 @@ const Title = () => {
     <TitleContainer>
       {/* <TitleText id="title">{data.name}</TitleText> */}
       <Typed
-        strings={["Guillaume Vitry", "Guy Vitry for short ;)", "Guy Vitry"]}
+        strings={["Guy Vitry"]}
         typeSpeed={80}
         backspeed={1000}
         backDelay={1000}

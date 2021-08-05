@@ -35,11 +35,11 @@ const TextContainer = styled.div`
 const LocationText = styled.p`
   font-family: "Lexend Deca", sans-serif;
   color: #999999;
-  font-size: 35px;
+  font-size: 40px;
 `;
 
 const Image = styled.img`
-  max-height: 40px;
+  max-height: 50px;
 `;
 
 const Location = () => {

@@ -10,6 +10,8 @@ import Container from "./Container";
 const ImageContainer = styled(Container)`
   grid-row: 2/3;
   grid-column: 1/2;
+  display: flex;
+  justify-content: center;
   @media (max-width: 700px) {
     height: 25vh;
   }
@@ -17,7 +19,7 @@ const ImageContainer = styled(Container)`
 
 const ImageContent = styled.img`
   border-radius: 7px;
-  height: 80%;
+  height: 100%;
   @media (max-width: 700px) {
     height: 90%;
     border-radius: 7px;
