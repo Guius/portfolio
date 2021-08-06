@@ -8,7 +8,7 @@ import data from "./../data/mainInformation";
 import Wrapper from "./Wrapper";
 import Title from "./Title";
 import ProfilePicture from "./ProfilePicture";
-import Skills from "./Skills";
+import Skills from "./SkillsGrid";
 import Next from "./NextPage";
 import Location from "./Location";
 

@@ -16,6 +16,7 @@ const TitleContainer = styled(Container)`
   @media (max-width: 500px) {
     height: 25vh;
   }
+  text-align: center;
 `;
 
 const Title = () => {
@@ -23,12 +24,12 @@ const Title = () => {
     <TitleContainer>
       {/* <TitleText id="title">{data.name}</TitleText> */}
       <Typed
-        strings={["Guy Vitry"]}
+        strings={["Guy Vitry", "github.com /Guius/"]}
         typeSpeed={80}
         backspeed={1000}
-        backDelay={1000}
-        startDelay={500}
+        backDelay={5000}
         className={styles.title}
+        loop
       />
     </TitleContainer>
   );

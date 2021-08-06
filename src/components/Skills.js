@@ -9,9 +9,8 @@ const SkillsContainer = styled.div`
   grid-column: 1/3;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
   @media (max-width: 700px) {
-    height: 25vh;
+    // height: 25vh;
     padding-top: 0.5em;
     padding-bottom: 1em;
     grid-template-columns: repeat(2, 1fr);
@@ -20,15 +19,15 @@ const SkillsContainer = styled.div`
 `;
 
 const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 `;
 
 const SkillText = styled.p`
   color: #d77d73;
-  border: solid #d77d73 2px;
-  border-radius: 25px;
+  // border: solid #d77d73 2px;
+  // border-radius: 25px;
   font-family: "Lexend Deca", sans-serif;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -42,10 +41,24 @@ const SkillText = styled.p`
   }
 `;
 
+const SkillContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid #d77d73 2px;
+  border-radius: 25px;
+  // min-width: 140px;
+  // max-width: 140px;
+  // min-length: 2px;
+  // max-length: 2px;
+  // border: solid #d77d73 2px;
+  // border-radius: 25px;
+`;
+
 const listItems = data.mainSkills.map((el) => (
-  <Container key={el}>
+  <SkillContainer key={el}>
     <SkillText>{el}</SkillText>
-  </Container>
+  </SkillContainer>
 ));
 
 const Skills = () => {
