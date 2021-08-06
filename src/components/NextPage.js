@@ -1,8 +1,12 @@
 // library imports
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 // component imports
 import Container from "./Container";
+
+// stylesheet imports
+import styles from "./../styles.module.css";
 
 const NextContainer = styled(Container)`
   grid-row: 4/5;
@@ -32,8 +36,10 @@ const NextText = styled.p`
 
 const Next = () => {
   return (
-    <NextContainer as="button">
-      <NextText>&#8595; Projects</NextText>
+    <NextContainer>
+      <Link to="/projects" className={styles.link}>
+        <NextText>&#8595; Projects</NextText>
+      </Link>
     </NextContainer>
   );
 };

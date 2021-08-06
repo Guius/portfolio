@@ -1,10 +1,6 @@
 // library imports
-import { useEffect } from "react";
 import styled from "styled-components";
 import Typed from "react-typed";
-
-// data imports
-import data from "../data/mainInformation";
 
 // component imports
 import Container from "./Container";
