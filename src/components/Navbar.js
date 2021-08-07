@@ -1,9 +1,13 @@
 // library imports
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+// import stylesheets
+import styles from "./../styles.module.css";
 
 // import images
-import back from "./../data/images/skip.svg";
+import back from "./../data/images/left-arrow.png";
 import linkedin from "./../data/images/linkedin.png";
 import github from "./../data/images/github.png";
 
@@ -25,19 +29,19 @@ const GithubContainer = styled.div`
   grid-column: 3/4;
 `;
 
-const Link = styled.a`
-  text-decoration: none;
-  font-family: "Lexend Deca", sans-serif;
-  display: flex;
-  justify-content: flex-start;
-`;
+// const Link = styled.a`
+//   text-decoration: none;
+//   font-family: "Lexend Deca", sans-serif;
+//   display: flex;
+//   justify-content: flex-start;
+// `;
 
 const MiddleLink = styled(Link)`
   justify-content: center;
 `;
 
 const Image = styled.img`
-  height: 50px;
+  height: 40px;
   padding-left: 15px;
   @media (min-width: 700px) {
     height: 46px;
@@ -52,7 +56,7 @@ function Navbar() {
   return (
     <Container>
       <BackContainer>
-        <Link as="a" href="/">
+        <Link to="/" className={styles.link}>
           <Image src={back}></Image>
         </Link>
       </BackContainer>
@@ -62,12 +66,12 @@ function Navbar() {
           href="https://www.linkedin.com/in/guillaume-vitry-8797831a0/"
           target="_blank"
         >
-          <FlatIcon src={linkedin}></FlatIcon>
+          <Image src={linkedin}></Image>
         </MiddleLink>
       </LinkedInContainer>
       <GithubContainer>
         <MiddleLink as="a" href="https://github.com/Guius/" target="_blank">
-          <FlatIcon src={github}></FlatIcon>
+          <Image src={github}></Image>
         </MiddleLink>
       </GithubContainer>
     </Container>

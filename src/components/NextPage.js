@@ -34,11 +34,11 @@ const NextText = styled.p`
   }
 `;
 
-const Next = () => {
+const Next = (props) => {
   return (
     <NextContainer>
-      <Link to="/projects" className={styles.link}>
-        <NextText>Projects &#8594;</NextText>
+      <Link to={props.link} className={styles.linkNext}>
+        <NextText>{props.text} &#8594;</NextText>
       </Link>
     </NextContainer>
   );

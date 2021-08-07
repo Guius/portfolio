@@ -5,6 +5,11 @@ import styled from "styled-components";
 // component imports
 import Wrapper from "./Wrapper";
 import Navbar from "./Navbar";
+import Subtitle from "./Subtitle";
+import Next from "./NextPage";
+
+// stylesheet imports
+import styles from "./../styles.module.css";
 
 const ProjectsWrapper = styled(Wrapper)`
   grid-template-columns: 1fr;
@@ -15,6 +20,8 @@ function Projects() {
   return (
     <ProjectsWrapper>
       <Navbar />
+      <Subtitle strings={["Projects"]} style={styles.title} />
+      <Next link="#" text="Technologies" />
     </ProjectsWrapper>
   );
 }

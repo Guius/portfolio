@@ -4,6 +4,9 @@ import React from "react";
 // data imports
 import data from "./../data/mainInformation";
 
+// stylesheet imports
+import styles from "./../styles.module.css";
+
 // component imports
 import Wrapper from "./Wrapper";
 import Title from "./Title";
@@ -15,11 +18,13 @@ import Overview from "./Overview";
 function Intro() {
   return (
     <Wrapper green>
-      <Title>{data.name}</Title>
+      <Title strings={["Guy Vitry", "github.com / Guius"]} style={styles.title}>
+        {data.name}
+      </Title>
       <ProfilePicture />
       <Overview />
       <Skills />
-      <Next />
+      <Next link="/projects" text="Projects" />
     </Wrapper>
   );
 }

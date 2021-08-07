@@ -10,15 +10,13 @@ import styles from "./../styles.module.css";
 
 const TitleContainer = styled(Container)`
   text-align: center;
+  grid-row: 2/3;
 `;
 
 const Title = () => {
   return (
     <TitleContainer>
-      <TitleText
-        strings={["Guy Vitry", "github.com /Guius"]}
-        style={styles.title}
-      />
+      <TitleText strings={["Projects"]} style={styles.subtitle} />
     </TitleContainer>
   );
 };
