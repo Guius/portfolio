@@ -38,7 +38,7 @@ const Next = () => {
   return (
     <NextContainer>
       <Link to="/projects" className={styles.link}>
-        <NextText>&#8595; Projects</NextText>
+        <NextText>Projects &#8594;</NextText>
       </Link>
     </NextContainer>
   );

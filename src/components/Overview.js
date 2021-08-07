@@ -20,13 +20,13 @@ const OverviewContainer = styled(Container)`
 `;
 
 const LocationContainer = styled.div`
-  grid-row: 1/2;
+  grid-row: 2/3;
   display: grid;
   grid-template-columns: 1fr 3fr;
 `;
 
 const ProfessionContainer = styled(LocationContainer)`
-  grid-row: 2/3;
+  grid-row: 1/2;
 `;
 
 const PinContainer = styled.div`
@@ -55,6 +55,14 @@ const Image = styled.img`
   max-height: 50px;
 `;
 
+const ProfessionText = styled.a`
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+
+  color: #999999;
+  font-size: 35px;
+`;
+
 const Overview = () => {
   return (
     <OverviewContainer>
@@ -71,7 +79,14 @@ const Overview = () => {
           <Image src={sign} />
         </PinContainer>
         <TextContainer>
-          <LocationText>Intern at Coshop</LocationText>
+          {/* <LocationText>
+            <a href="https://www.coshop.io/" target="_blank" rel="noreferrer">
+              Intern at Coshop
+            </a>
+          </LocationText> */}
+          <ProfessionText as="a" href="https://www.coshop.io/" target="_blank">
+            Intern at Coshop
+          </ProfessionText>
         </TextContainer>
       </ProfessionContainer>
     </OverviewContainer>

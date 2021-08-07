@@ -10,14 +10,14 @@ import Title from "./Title";
 import ProfilePicture from "./ProfilePicture";
 import Skills from "./SkillsGrid";
 import Next from "./NextPage";
-import Location from "./Location";
+import Overview from "./Overview";
 
 function Intro() {
   return (
     <Wrapper green>
       <Title>{data.name}</Title>
       <ProfilePicture />
-      <Location />
+      <Overview />
       <Skills />
       <Next />
     </Wrapper>

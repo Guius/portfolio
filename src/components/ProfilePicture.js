@@ -14,6 +14,7 @@ const ImageContainer = styled(Container)`
   justify-content: center;
   @media (max-width: 700px) {
     height: 25vh;
+    grid-column: 1/3;
   }
 `;
 
