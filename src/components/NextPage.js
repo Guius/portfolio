@@ -12,7 +12,6 @@ const NextContainer = styled(Container)`
   grid-row: 4/5;
   grid-column: 1/3;
   background-color: #f4f4f4;
-  border-radius: 7px;
   border: none;
 
   :hover {

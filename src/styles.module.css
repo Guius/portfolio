@@ -5,6 +5,8 @@
 
 .subtitle {
   font-family: "Lexend Tera", sans-serif;
+  /* color: #f4f4f4; */
+  color: black;
   font-size: 38px;
 }
 
@@ -27,4 +29,9 @@
   font-family: "Lexend Deca", sans-serif;
   display: flex;
   justify-content: center;
+}
+
+.linkProjects {
+  text-decoration: none;
+  color: #393b40;
 }

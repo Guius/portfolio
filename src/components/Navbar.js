@@ -48,10 +48,6 @@ const Image = styled.img`
   }
 `;
 
-const FlatIcon = styled.img`
-  height: 40px;
-`;
-
 function Navbar() {
   return (
     <Container>

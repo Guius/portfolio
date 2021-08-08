@@ -16,7 +16,10 @@ const TitleContainer = styled(Container)`
 const Title = () => {
   return (
     <TitleContainer>
-      <TitleText strings={["Projects"]} style={styles.subtitle} />
+      <TitleText
+        strings={["Projects", "Click to see more"]}
+        style={styles.subtitle}
+      />
     </TitleContainer>
   );
 };
